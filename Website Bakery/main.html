@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+    <title>Xyriel's Bakery</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li id="cart-icon"><a href="#orders"><img src="cart.png" alt="Search" id="cart-icon-img"></a></li>
+                <li><a href="#products">OUR PRODUCTS</a></li>
+                <li><a href="#locations">LOCATIONS</a></li>
+                <li class="logolist"><a href="#biglogo"><img src="circlelogo.png" alt="Logo" class="logo"></a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#">ORDER ONLINE</a></li> 
+                <li id="search-icon"><img src="magnifying-glass.png" alt="Search" id="search-icon-img"></li>
+            </ul>
+        </nav>
+        
+        <div id="search-container" class="searchb">
+            <input id="searchbar" type="text" name="search" placeholder="Search...">
+            
+            <div class="breadsearch" id="pandesal" data-name="malunggay pandesal">Malunggay Pandesal</div>
+            <div class="breadsearch" id="monay" data-name="monay">Monay</div>
+            <div class="breadsearch" id="pandecoco" data-name="pan de coco">Pan de Coco</div>
+            <div class="breadsearch" id="ensaymada" data-name="ensaymada">Ensaymada</div>
+            <div class="breadsearch" id="loaf" data-name="bread loaf">Bread Loaf</div>
+            <div class="breadsearch" id="spanish" data-name="spanish bread">Spanish Bread</div>
+            <div class="breadsearch" id="brownies" data-name="choco brownies">Choco Brownies</div>
+            <div class="breadsearch" id="kalihim" data-name="kalihim">Kalihim</div>
+            <div class="breadsearch" id="putok" data-name="putok">Putok</div>
+            <div class="breadsearch" id="kababayan" data-name="kababayan">Kababayan</div>
+            <div class="breadsearch" id="eggpie" data-name="egg pie">Egg Pie</div>
+            <div class="breadsearch" id="crinkles" data-name="crinkles">Crinkles</div>
+            <div class="breadsearch" id="hopia" data-name="hopia">Hopia</div>
+            <div class="breadsearch" id="pinagong" data-name="pinagong">Pinagong</div>
+            <div class="breadsearch" id="pianono" data-name="pianono">Pianono</div>
+            <div class="breadsearch" id="cheesebread" data-name="cheese bread">Cheese Bread</div>
+        </div>
+        <div id="search-results"></div>
+    </header>
+
+    <div id="orders" class="modal">
+        <div class="content">
+            <h1 style="color: #d72c2c"><center>Your Orders</center></h1>
+    
+            <a
+                href="#"
+                style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    color: #d72c2c;
+                    font-size: 30px;
+                    text-decoration: none;
+                "
+                >&times;</a
+            >
+        
+        </div>
+    </div>
+
+    <div id="add" class="modal">
+        <div class="content">
+            <h1 style="color: #d72c2c"><center>Cart</center></h1>
+            <p>Your Order has been added!</p>
+            <a
+                href="#"
+                style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    color: #d72c2c;
+                    font-size: 30px;
+                    text-decoration: none;
+                    z-index: 100;
+                "
+                >&times;</a
+            >
+        
+        </div>
+    </div>
+
+    <div class="home">
+        <img src="Bakery Logo.png" id="biglogo">
+        <img src="phrase.png" id="phrase">
+    </div>
+
+    <div class="container1">
+        <img src="products.png" id="products" height="70">
+    </div>
+
+    <div class="container2">
+        <div class="bread">
+            <img src="mpandesal.jpg" id="pandesal-image" alt="Malunggay Pandesal" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Malunggay Pandesal</strong></center></p>
+                <button class="breadbutton"><a href="#add"><strong>Add to cart</strong></a></button>   
+            </div>
+        </div>
+        <div class="bread">
+            <img src="monay.jpg" id="monay" alt="Monay" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Monay</strong></center></p>
+                <button class="breadbutton"><a href="#add"><strong>Add to cart</strong></a></button>   
+            </div>
+        </div>
+        <div class="bread">
+            <img src="pandecoco.jpg" id="pandecoco-image" alt="Pan de Coco" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Pan de Coco</strong></center></p>
+                <button class="breadbutton"><a href="#add"><strong>Add to cart</strong></a></button>   
+            </div>
+        </div>
+        <div class="bread">
+            <img src="ensaymada.jpg" id="ensaymada-image" alt="Ensaymada" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Ensaymada</strong></center></p>
+                <button class="breadbutton"><a href="#add"><strong>Add to cart</strong></a></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="tasty.jpg" id="loaf-image" alt="Bread Loaf" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Bread Loaf</strong></center></p>
+                <button class="breadbutton"><a href="#add"><strong>Add to cart</strong></a></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="Spanish.jpg" id="spanish-image" alt="Spanish Bread" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Spanish Bread</strong></center></p>
+                <button class="breadbutton"><a href="#add"><strong>Add to cart</strong></a></button> 
+            </div> 
+        </div>
+        <div class="bread">
+            <img src="brownies.jpg" id="brownies-image" alt="Choco Brownies" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Choco Brownies</strong></center></p>
+                <button class="breadbutton"><a href="#add"><strong>Add to cart</strong></a></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="kalihim.jpg" id="kalihim-image" alt="Kalihim" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Kalihim</strong></center></p>
+                <button class="breadbutton"><a href="#add"><strong>Add to cart</strong></a></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="putok.jpg" id="putok-image" alt="Putok" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Putok</strong></center></p>
+                <button class="breadbutton"><strong>Add to cart</strong></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="kababayan.jpg" id="kababayan-image" alt="Kababayan" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Kababayan</strong></center></p>
+                <button class="breadbutton"><strong>Add to cart</strong></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="egg pie.jpg" id="eggpie-image" alt="Egg Pie" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Egg Pie</strong></center></p>
+                <button class="breadbutton"><strong>Add to cart</strong></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="crinkles.jpg" id="crinkles-image" alt="Crinkles" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Crinkles</strong></center></p>
+                <button class="breadbutton"><strong>Add to cart</strong></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="hopia.jpg" id="hopia-image" alt="Hopia" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Hopia</strong></center></p>
+                <button class="breadbutton"><strong>Add to cart</strong></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="pinagong.jpg" id="pinagong-image" alt="Pinagong" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Pinagong</strong></center></p>
+                <button class="breadbutton"><strong>Add to cart</strong></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="pianono.jpg" id="pianono-image" alt="Pianono" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Pianono</strong></center></p>
+                <button class="breadbutton"><strong>Add to cart</strong></button> 
+            </div>
+        </div>
+        <div class="bread">
+            <img src="cheesebread.jpg" id="cheesebread-image" alt="Cheese Bread" width="300" height="300">
+            <div class="hoverinfo">
+                <p class="namebread"><strong><center>Cheese Bread</strong></center></p>
+                <button class="breadbutton"><strong>Add to cart</strong></button> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div id="locations">
+            <img src="stores.png" id="stores" height="70">
+            <div class="locate">
+                <div class="visit">
+                    <p><strong>Come and Visit us!</strong></p><br>
+                    <p><strong>Location 1:</strong><br> Quezon Avenue, Brgy. Bagong Bayan, Mauban, Quezon</p><br>
+                    <p><strong>Location 2:</strong><br> Signal, Brgy. Bagong Bayan, Mauban, Quezon</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d253.68397135555355!2d121.7281593536635!3d14.183431292406139!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1713988612971!5m2!1sen!2sph" width="400" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">    
+        <div id="about">
+            <img src="about.png" id="about" height="70">
+        </div>
+        <div class="desc">
+            <img src="Bakery Logo.png">
+            <p><strong>Welcome to Xyriel's Bakery!</strong><br><br>A family-owned bakery established on 2002. We strive to create fresh goods that will be remembered and enjoyed by our customers. We look forward to sharing our passion for baking with you and creating cherished memories one delicious treat at a time.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><center><strong>Contact us</strong></center></p><br>
+        <p><center>Phone: +639218873044</center></p>              
+        <p><center>Email: xyrielbakery@gmail.com</center></p>
+    </footer>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery.js"></script>
+</html>
